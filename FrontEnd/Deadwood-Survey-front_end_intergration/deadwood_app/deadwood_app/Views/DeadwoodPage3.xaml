@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="deadwood_app.Views.DeadwoodPage3">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10">
+            <StackLayout>
+                <!--Title-->
+
+                <Label Text="Carrying out the Deadwood Survey" Style="{StaticResource MainTitle}" Margin="0,0,0,10"/>
+
+                <!-- next section -->
+                
+                <Frame Style="{StaticResource PageFrame}">
+                    <StackLayout>
+                        <Label Text="You can do the Deadwood Survey as a group or by yourself. Before you go out to the woodland, answer questions 1-8 . Once you get outside, there are two parts to the Deadwood Survey." 
+                           Style="{StaticResource PageText}" Margin="10"/>
+
+                        <Frame Style="{StaticResource PageFrame}" Padding="0">
+                            <Button Text="How much deadwood can you see? 
+                                The 100 pace transect"
+                                 Style="{StaticResource normalButton}"
+                               Clicked="PaceButton_Clicked"/>
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}" Padding="0">
+                            <Button Text="How old is the deadwood?
+                               Estimating the age of each piece"
+                               Style="{StaticResource normalButton}"
+                             Clicked="OldAgeButton_Clicked" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}" Margin="0,0,0,10" Padding="0">
+                            <Button Text="What do your results mean?"
+                               Style="{StaticResource normalButton}"
+                               Clicked="SurveyResultsButton_Clicked" />
+                        </Frame>
+
+                    </StackLayout>
+                </Frame>
+                
+                <!-- safety box -->
+
+
+                <Frame Style="{StaticResource PageFrameSafety}">
+                    <StackLayout>
+
+                        <Image Source="safety.png" Aspect="AspectFit"/>
+
+                        <!--Title-->
+                        <Label Text="Your safety" Style="{StaticResource MainTitleSafety}" Margin="0,10,0,10"/>
+
+                        <Label Text="It is your responsibility to assess the risks when carrying out any kind of fieldwork. While taking part in the survey" Style="{StaticResource PageText}" TextDecorations="Underline" Margin="0,10,0,10"/>
+
+                        <Frame Style="{StaticResource PageFrameSafety}">
+                            <Label Text="Wear appropriate footwear and clothing based upon terrain and the weather forecast" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrameSafety}">
+                            <Label Text="Don't go into the woods in stormy weather" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrameSafety}">
+                            <Label Text="Cover any open cuts and wash hands thoroughly afterwards" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrameSafety}">
+                            <Label Text="Take care when handling deadwood, be aware of other people's toes and fingers and don't try to lift heavy logs" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrameSafety}">
+                            <Label Text="If you move any deadwood, please return it to where you found it afterwards. Deadwood is a home for many creatures and we don't want to disturb them too much" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrameSafety}">
+                            <Label Text="Look out for any sharp objects in the soil, things you could trip on, and thorny plants" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrameSafety}">
+                            <Label Text="Before going out to the woodland, let someone know where you will be working and what time you are expected to return" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrameSafety}">
+                            <Label Text="Make sure you know what to do in an emergency. Carry a fully charged mobile phone. Make sure you can describe the location of where you will be working (ideally with a 6-figure grid reference or postcode) in case you need to summon help" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                            <Label Text="More general safety information is available from the Royal Society for the Prevention of Accidents
+                                   www.rospa.com" 
+                           Style="{StaticResource PageText}" />
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

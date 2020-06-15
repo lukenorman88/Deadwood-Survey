@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="deadwood_app.Views.DeadwoodPage1"
+             BackgroundColor="#ffffff">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10">
+            <StackLayout>
+
+                <!--Title-->
+                
+                <Label Text="What is Deadwood?" Style="{StaticResource MainTitle}" Margin="0,0,0,10"/>
+                
+                <!-- next section -->
+
+                <Label Text="Deadwood is a tree or part of a tree that has died and is in a state of decomposition. Here are five different types of deadwood" 
+                           Style="{StaticResource PageText}" Margin="10,0,10,0"/>
+          
+
+                <!--Image-->
+                    <Frame Style="{StaticResource PageFrame}">
+                    <ImageButton Source="deadwood_image.png" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Aspect="AspectFit" />
+                    </Frame>
+                    <!--Title-->
+
+                <Label Text="Why is deadwood dead good?" Style="{StaticResource MainTitle}" Margin="0,10,0,10"/>
+              
+                <!-- next section -->
+                
+                <Frame Style="{StaticResource PageFrame}">
+                    <Label Text="It plays a big part in nutrient recycling, slowly releasing nitrogen into the soil for other plants to use" 
+                           Style="{StaticResource PageText}" />
+                </Frame>
+
+                <Frame Style="{StaticResource PageFrame}">
+                    <Label Text="It acts as a carbon storage system, capturing carbon and locking it into the ground to prevent global warming" 
+                           Style="{StaticResource PageText}" />
+                </Frame>
+
+                <Frame Style="{StaticResource PageFrame}">
+                    <Label Text="Fallen deadwood also helps the stability of woodland soil and helps prevent soil erosion" 
+                           Style="{StaticResource PageText}" />
+                </Frame>
+
+                <Frame Style="{StaticResource PageFrame}">
+                    <Label Text="Deadwood is an important micro habitat for birds, mammals, fungi, plants, amphibians, reptiles, insects, and even fish!" 
+                           Style="{StaticResource PageText}" />
+                </Frame>
+
+            </StackLayout>
+                
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

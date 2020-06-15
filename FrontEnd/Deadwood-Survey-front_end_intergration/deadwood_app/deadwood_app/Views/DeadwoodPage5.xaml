@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="deadwood_app.Views.DeadwoodPage5">
+    
+    <!--Navigation bar title-->
+    <NavigationPage.TitleView>
+        <Label Text="What do your results mean?" Style="{StaticResource NavTitle}" />
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10">
+            <StackLayout>
+
+                <!--Title-->
+
+                <Label Text="What do your results mean" Style="{StaticResource MainTitle}" Margin="0,0,0,10"/>
+
+                <!-- next text section -->
+
+                <Label Text="In the past deadwood was taken away for firewood. More recently deadwood has been removed by people who think it threatens the health of living trees. Some people have even cleared away deadwood because they think is is untidy." 
+                           Style="{StaticResource PageText}" Margin="10,0,10,0"/>
+
+                <Label Text="We now know that a good volume of deadwood is actually a sign of a healthy woodland. It is even better if the different pieces of deadwood are at different stages of decay." 
+                           Style="{StaticResource PageText}" Margin="10,0,10,0"/>
+                     
+
+                <!--Title-->
+
+                <Frame Padding="0">
+                    <Label Text="How valuable is your woodland as a deadwood habitat?" Style="{StaticResource ResultsMainTitle}" />
+                </Frame>
+
+                <Frame Padding="0" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" HasShadow="False">
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="0">
+
+                        <Frame Padding="0">
+
+                            <StackLayout Orientation="Vertical" Padding="0">
+                                <Label Text="Low value" BackgroundColor="#EE1B2D" Style="{StaticResource ResultsTitle}"/>
+                                <Label Text="Less than 10% of stems dead/decaying" BackgroundColor="#FDDDD1" TextColor="Black" Style="{StaticResource PageText}"/>
+                                <Label Text="Less than 1 veteran tree per 100 paces" BackgroundColor="#FDDDD1" TextColor="Black" Style="{StaticResource PageText}"/>
+                            </StackLayout>
+
+                        </Frame>
+
+                        <Frame Padding="0">
+
+                            <StackLayout Orientation="Vertical" Padding="0">
+                                <Label Text="Medium value" BackgroundColor="#F4792A" Style="{StaticResource ResultsTitle}"/>
+                                <Label Text="11-20% of stems dead/decaying" BackgroundColor="#FEE7D5" TextColor="Black" Style="{StaticResource PageText}"/>
+                                <Label Text="About 1 veteran tree per 100 paces" BackgroundColor="#FEE7D5" TextColor="Black" Style="{StaticResource PageText}"/>
+                            </StackLayout>
+
+                        </Frame>
+
+                        <Frame Padding="0">
+
+                            <StackLayout Orientation="Vertical" Padding="0">
+                                <Label Text="High value" BackgroundColor="#798F3D" Style="{StaticResource ResultsTitle}"/>
+                                <Label Text="More than 20% of stems dead/decaying" BackgroundColor="#E6EAD8" TextColor="Black" Style="{StaticResource PageText}"/>
+                                <Label Text="More than 1 veteran tree per 100 paces" BackgroundColor="#E6EAD8" TextColor="Black" Style="{StaticResource PageText}"/>
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+                </Frame>
+
+                <Label Text="Around one fifth of the UK's woodland species depend on deadwood for some part of their life-cycle. These species include mammals, hole-nesting birds (like nuthatches), many invertebrates (like beetles and hoverflies), fungi, lichens and mosses." 
+                           Style="{StaticResource PageText}" Margin="0,10,0,10"/>
+
+
+                <!--Title-->
+
+                <Label Text="Creating deadwood habitats" Style="{StaticResource MainTitle}" Margin="0,0,0,10"/>
+
+                <Frame Style="{StaticResource PageFrame}">
+                    <StackLayout>
+
+                        <!--Title-->
+                        <Label Text="What can you do if there is not much deadwood in your woodland?" Style="{StaticResource MainTitle}" Margin="0,10,0,10"/>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="If you fell the trees for firewood or timber, leave a few logs on the ground, and don't remove the tree stumps" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="If you like deadwood but worry it is unsafe (like loose branches near footpaths), gather it up and build a habitat pile. This can be anything from a log pile to a purpose-built bug hotel" 
+                           Style="{StaticResource PageText}"/>
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="If there are few snags, or few old trees with big hollows, then put up bird and bat boxes. These boxes mimic a hollow tree" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Label Text="Trees are valuable in their own right, so don't kill living trees just to make new deadwood habitat. 
+                               Avoid bringing deadwood into the woodland from elsewhere. 
+                               This risks spreading pests and diseases." 
+                               Style="{StaticResource PageText}" Margin="0,10,0,10"/>
+
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

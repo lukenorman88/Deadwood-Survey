@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="deadwood_app.Views.DeadwoodPage2">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10">
+            <StackLayout>
+                <!--Title-->
+
+                <Label Text="The Deadwood Survey" Style="{StaticResource MainTitle}" Margin="0,0,0,10"/>
+
+                <!-- next section -->
+
+                <Label Text="Is the deadwood in your wood dead good? Find out for yourself with this simple survey. It should take no more than an hour to complete." 
+                       Style="{StaticResource PageText}" Margin="10"/>
+
+                <!--Image-->
+                <Frame Style="{StaticResource PageFrame}">
+                    <ImageButton Source="page2img3.png" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Aspect="AspectFit" />
+                </Frame>
+
+
+                <!-- next section -->
+
+                <Label Text="Any piece of woodland will do, as long as it is at least 100 square metres in area. Ancient woodland, forestry plantations, trees growing on urban wasteland, wood pasture and scrub are all fine." 
+                           Style="{StaticResource PageText}" Margin="10"/>
+
+
+                <!-- wywn box -->
+                
+                <Frame BorderColor="#002C41" BackgroundColor="#E6EDF0">
+                    <StackLayout>
+
+                        <!--Title-->
+                        <Label Text="What you will need" Style="{StaticResource MainTitle}" Margin="0,10,0,10"/>
+
+                        <Label Text="The Deadwood Survey pack which contains" Style="{StaticResource PageText}" TextDecorations="Underline" Margin="0,10,0,10"/>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="This Survey" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="The Deadwood Field Guide" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="The folded paper measuring tape" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+
+                        <Label Text="Useful equipment" Style="{StaticResource PageText}" TextDecorations="Underline" Margin="0,10,0,10"/>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="Pencil" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="Camera" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="Collection pots and magnifier" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="Plastic spoons or trowel" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="Light coloured collection tray" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="Coloured ribbon" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+                        <Frame Style="{StaticResource PageFrame}">
+                            <Label Text="Calculator" 
+                           Style="{StaticResource PageText}" />
+                        </Frame>
+
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

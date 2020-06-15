@@ -1,0 +1,29 @@
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.deps.json
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.runtimeconfig.json
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.runtimeconfig.dev.json
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.dll
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.csprojAssemblyReference.cache
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.csproj.CoreCompileInputs.cache
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.RazorAssemblyInfo.cache
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.RazorAssemblyInfo.cs
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.AssemblyInfoInputs.cache
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.AssemblyInfo.cs
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.pdb
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.dll
+C:\Users\Luke_\OneDrive\Desktop\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.pdb
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.deps.json
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.runtimeconfig.json
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.runtimeconfig.dev.json
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.dll
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\bin\Debug\netcoreapp2.1\DeadwoodAPI.pdb
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.csprojAssemblyReference.cache
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.csproj.CoreCompileInputs.cache
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.RazorAssemblyInfo.cache
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.RazorAssemblyInfo.cs
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.AssemblyInfoInputs.cache
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.AssemblyInfo.cs
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.dll
+C:\Users\Luke_\OneDrive\Group Project\Deadwood\API Programs\DeadwoodAPI\DeadwoodAPI\obj\Debug\netcoreapp2.1\DeadwoodAPI.pdb

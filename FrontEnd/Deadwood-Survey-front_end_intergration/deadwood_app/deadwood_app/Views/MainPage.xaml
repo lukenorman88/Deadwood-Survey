@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:deadwood_app"
+             x:Class="deadwood_app.Views.MainPage" BackgroundColor="#ffffff"
+             NavigationPage.HasNavigationBar="false">
+
+    <ScrollView  Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="20">
+        <StackLayout VerticalOptions="Center">
+            
+            <!-- company logo -->
+       
+                <Image x:Name="splash_image_menu" Source="splash.png" Aspect="AspectFit"/>
+           
+            <!-- Main Menu Buttons -->
+            
+            <Button x:Name="SurveyButton" Text="Start Survey" Style="{StaticResource normalButton}" Clicked="SurveyButton_Clicked">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedBook">
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+            <Button x:Name="MoreInfoButton" Text="Deadwood Guide" Style="{StaticResource normalButton}" Clicked="DeadwoodGuideButton_Clicked">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedBook">
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+            <Button x:Name="BugButton" Text="Bug and animal guide" Style="{StaticResource normalButton}">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedBook">
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+            <Button x:Name="ContactButton" Text="About / Contact" Style="{StaticResource normalButton}" Clicked="ContactButton_Clicked">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedBook">
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

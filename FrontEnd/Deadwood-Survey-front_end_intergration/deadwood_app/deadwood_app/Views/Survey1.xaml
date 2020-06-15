@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="deadwood_app.Views.Survey1"
+             BackgroundColor="{StaticResource darkBlue}">
+
+    <!--Navigation bar title-->
+    <NavigationPage.TitleView>
+        <Label Text="Introductory Questions" Style="{StaticResource NavTitle}" />
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="0,10,0,0">
+                <!-- QUESTION 1 -->
+                <Frame BorderColor="{StaticResource darkButtonColor}" BackgroundColor="White">
+                    <StackLayout>
+                        <Label Text="1. Are you part of an enviromental group?" Style="{StaticResource Question}" />
+                        <Picker x:Name="PickerEnvGroup" Style="{StaticResource Picker}">
+                            <Picker.Items>
+                                <x:String>Yes</x:String>
+                                <x:String>No</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+
+                <!-- QUESTION 2 -->
+                <Frame Style="{StaticResource SurveyFrame}">
+                    <StackLayout>
+                        <Label Text="2. Have you carried out an enviromental survey before?" Style="{StaticResource Question}" />
+                        <Picker x:Name="PickerSurveyBefore" Style="{StaticResource Picker}">
+                            <Picker.Items>
+                                <x:String>Yes</x:String>
+                                <x:String>No</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Style="{StaticResource SurveyFrame}">
+                    <StackLayout>
+                        <!-- QUESTION 3 -->
+                        <Label Text="3. Name of woodland" Style="{StaticResource Question}" />
+                        <Entry x:Name="TxtWoodland" Style="{StaticResource QuestionEntry}"></Entry>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Style="{StaticResource SurveyFrame}">
+                    <StackLayout>
+                        <!-- QUESTION 4 -->
+                        <Label Text="4. Location?" Style="{StaticResource Question}"/>
+                        <Label x:Name="LblLocation" Style="{StaticResource Question}"/>
+                        <Button
+                                x:Name="BtnLocation"
+                                Text="Get Location"
+                                Clicked="BtnLocation_ClickedAsync"
+                                Style="{StaticResource SubmitButton}"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Style="{StaticResource SurveyFrame}">
+                    <StackLayout>
+                        <!-- QUESTION 5 -->
+                        <Label Text="5. Grid reference (if known)?" Style="{StaticResource Question}"/>
+                        <Entry x:Name="TxtGrid" Style="{StaticResource QuestionEntry}"></Entry>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Style="{StaticResource SurveyFrame}">
+                    <StackLayout>
+                        <!-- QUESTION 6 -->
+                        <Label Text="6. Size of woodland in Hectares (if known)?" Style="{StaticResource Question}"/>
+                        <Entry x:Name="TxtSize" Keyboard="Numeric" Style="{StaticResource QuestionEntry}"></Entry>
+                    </StackLayout>
+                </Frame>
+
+                <!--NEXT BUTTON-->
+                <Button
+                    x:Name="BtnNext"
+                    Text="Next"
+                    Clicked="BtnNext_Clicked"
+                    Style="{StaticResource SubmitButton}"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

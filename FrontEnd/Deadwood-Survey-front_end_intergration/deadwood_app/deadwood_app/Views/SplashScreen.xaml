@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="deadwood_app.Views.SplashScreen"
+             BackgroundColor="{StaticResource darkBlue}"
+             >
+    <ContentPage.Content>
+        <StackLayout Margin="0,-50,0,0" VerticalOptions="CenterAndExpand">
+            <Image 
+                x:Name="splash_image"
+                Source="splash.png"/>
+
+            <Label Text="The dead good" FontSize="Medium" TextColor="White" Margin="10,0,0,0">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String"
+                                Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                iOS="GothamRoundedMedium">
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <Label Text="Deadwood Survey" FontSize="Large" TextColor="White" Margin="10,-15,0,0">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String"
+                                Android="GothamRoundedBold.ttf#GothamRoundedBold"
+                                iOS="GothamRoundedBold">
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <Label Text="Survey App" FontSize="Medium" TextColor="{StaticResource lightGreen}" HorizontalOptions="Center" Margin="55,-15,0,0">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String"
+                                Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                iOS="GothamRoundedMedium">
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

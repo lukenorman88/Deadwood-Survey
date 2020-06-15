@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="deadwood_app.Views.DeadwoodPage4">
+    
+    <!--Navigation bar title-->
+    <NavigationPage.TitleView>
+        <Label Text="How much deadwood?
+               The 100 pace transect" Style="{StaticResource NavTitle}" />
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10">
+            <StackLayout HorizontalOptions="FillAndExpand">
+
+                <!--Title-->
+
+                <Label Text="How much deadwood?
+                       The 100 pace transect" Style="{StaticResource MainTitle}" Margin="0,0,0,10"/>
+
+           
+            <!-- next section -->
+
+                <Frame Style="{StaticResource PageFrame}" Padding="0">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+
+                        <Label Text="Walk 100 paces into the woodland (or measure 100 metres) in any direction." 
+                       Style="{StaticResource PageText}" Margin="10"/>
+
+                        <Label Text="Mark the start by putting a stick in the ground or tying a coloured ribbon to a tree. 
+                           Try to walk in a straight line. 
+                           This 100 pace walk is called a transect." 
+                       Style="{StaticResource PageText}" Margin="10"/>
+                    </StackLayout>
+
+                    <Frame BackgroundColor="Transparent">
+                        <Image Source="ribbon.png" Aspect="AspectFit"/>
+                    </Frame>
+                        
+                </StackLayout>
+                </Frame>
+
+                <!-- next section -->
+
+                <Frame Style="{StaticResource PageFrame}" Padding="0">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+
+                        <Label Text="Look for large pieces of deadwood* along the transect. Check up to 10 metres away on either side of the transect. Use page 6 to help you draw a map of how much deadwood there is. " 
+                       Style="{StaticResource PageText}" Margin="10"/>
+
+                        <Label Text="* A large piece of deadwood is more than 20cm in diameter and 2 metres long. You can use the paper tape measure in your survey pack to check." 
+                       Style="{StaticResource PageText}" Margin="10"/>
+                    </StackLayout>
+
+                    <Frame BackgroundColor="Transparent">
+                        <Image Source="meWood.png" Aspect="AspectFit"/>
+                    </Frame>
+
+                </StackLayout>
+                </Frame>
+
+                <Frame Style="{StaticResource PageFrame}">
+                    <Image Source="paces.png" Aspect="AspectFit"/>
+                </Frame>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

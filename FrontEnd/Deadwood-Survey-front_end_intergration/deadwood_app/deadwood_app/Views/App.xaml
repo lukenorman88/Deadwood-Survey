@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="deadwood_app.Views.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="darkBlue">#004153</Color>
+            <Color x:Key="lightGreen">#bed600</Color>
+
+            <ResourceDictionary>
+                <Style TargetType="NavigationPage">
+                    <Setter Property="BarBackgroundColor" Value="#004153"/>
+                    <Setter Property="BarTextColor" Value="#bed60"/>
+                </Style>
+            </ResourceDictionary>
+
+            <!-- Buttons -->
+
+            <Color x:Key="greenTextColor">#C1D52F</Color>
+            <Color x:Key="darkButtonColor">#013D51</Color>
+
+            <Style x:Key="normalButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource darkButtonColor}"/>
+                <Setter Property="TextColor" Value="{StaticResource greenTextColor}"/>
+            </Style>
+
+            
+            <!-- Survey Question-->
+            <Style x:Key="Question" TargetType="Label">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="{StaticResource darkButtonColor}"/>
+                <Setter Property="Margin" Value="10,0,0,0"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedBook.ttf#GothamRoundedBook"
+                                    iOS="GothamRoundedBook">
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Question Entry -->
+            <Style x:Key="QuestionEntry" TargetType="Entry">
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+            
+            <!-- Nav bar title -->
+            <Style x:Key="NavTitle" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedMedium">
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Survey Picker-->
+            <Style x:Key="Picker" TargetType="Picker">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="Title" Value="Tap to select option"/>
+            </Style>
+
+            <!-- Next / Submit Button -->
+            <Style x:Key="SubmitButton" TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource greenTextColor}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource darkButtonColor}"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="EndAndExpand"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedMedium">
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            
+            <!-- Survey Question Frames -->
+            <Style x:Key="SurveyFrame" TargetType="Frame">
+                <Setter Property="BorderColor" Value="{StaticResource darkButtonColor}"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+
+            <!-- Main Page Titles -->
+            
+            <Style x:Key="MainTitle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="TextColor" Value="{StaticResource darkBlue}"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedMedium">
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>       
+            
+            <!-- Main Page Titles Safety -->
+            
+            <Style x:Key="MainTitleSafety" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="TextColor" Value="#EE1B2D"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedMedium">
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>           
+            
+            <!-- Page text -->
+            
+            <Style x:Key="PageText" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedMedium">
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Page frames -->
+            <Style x:Key="PageFrame" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BorderColor" Value="{StaticResource darkButtonColor}"/>
+            </Style>           
+            
+            <!-- Page frames Safety -->
+            <Style x:Key="PageFrameSafety" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#FDF3EF"/>
+                <Setter Property="BorderColor" Value="#EE1B2D"/>
+            </Style>
+          
+          <!-- Results Title Label-->
+          <Style x:Key="ResultsTitle" TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+          </Style>         
+            
+
+            <!-- Contact Page Labels -->
+            <Style x:Key="ContactLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="TextColor" Value="{StaticResource darkButtonColor}"/>
+                <Setter Property="Margin" Value="0, 0, 0, 20"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedBook.ttf#GothamRoundedBook"
+                                    iOS="GothamRoundedBook">
+                            </OnPlatform>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+
+            <!-- Results Main Title Label-->
+          <Style x:Key="ResultsMainTitle" TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="{StaticResource darkBlue}"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+             <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedMedium">
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

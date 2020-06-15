@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="deadwood_app.Views.DeadwoodGuideMainPage">
+
+
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label 
+                Text="Deadwood Guide" TextColor="White" FontSize="Medium">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String"
+                                    Android="GothamRoundedMedium.ttf#GothamRoundedMedium"
+                                    iOS="GothamRoundedMedium">
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10">
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                
+                <ImageButton Source="page1.png"
+                                 Aspect="AspectFit"
+                                 BackgroundColor="Transparent"
+                                 Grid.Column="1"
+                                 Grid.Row="1"
+                                 Clicked="DeadwoodPage1_Clicked"
+                                 BorderColor="Black"/>
+
+                <ImageButton Source="page2.png"
+                                 Aspect="AspectFit"
+                                 BackgroundColor="Transparent"
+                                 Grid.Column="2"
+                                 Grid.Row="1"
+                                 Clicked="DeadwoodPage2_Clicked"
+                                 BorderColor="Black"/>                
+                
+                <ImageButton Source="page3.png"
+                                 Aspect="AspectFit"
+                                 BackgroundColor="Transparent"
+                                 Grid.Column="1"
+                                 Grid.Row="2"
+                                 Clicked="DeadwoodPage3_Clicked"
+                                 BorderColor="Black"
+                                    />
+
+                <ImageButton Source="page4.png"
+                                 Aspect="AspectFit"
+                                 BackgroundColor="Transparent"
+                                 Grid.Column="2"
+                                 Grid.Row="2"
+                                 Clicked="DeadwoodPage4_Clicked"
+                                 BorderColor="Black"/>
+            </Grid>
+            
+            
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
